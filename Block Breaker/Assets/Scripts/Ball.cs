@@ -24,8 +24,12 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LockBallToPaddle();
-        LaunchBall();
+        if (!hasStarted)
+        {
+            LockBallToPaddle();
+            LaunchBall();
+        }
+
     }
 
     private void LockBallToPaddle()
