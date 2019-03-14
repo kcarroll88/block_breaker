@@ -49,4 +49,12 @@ public class Ball : MonoBehaviour
             hasStarted = true;
         }
     }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (hasStarted == true)
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    }
 }
