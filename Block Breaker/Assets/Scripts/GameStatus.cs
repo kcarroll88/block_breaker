@@ -18,6 +18,7 @@ public class GameStatus : MonoBehaviour
         int gameStatusCount = FindObjectsOfType<GameStatus>().Length;
         if (gameStatusCount > 1)
         {
+            gameObject.SetActive(false);
             Destroy(gameObject);
         }
         else
@@ -42,5 +43,10 @@ public class GameStatus : MonoBehaviour
     {
         currentScore += pointsPerBlock;
         scoreText.text = currentScore.ToString();
+    }
+
+    public void ResetScore()
+    {
+        Destroy(gameObject);
     }
 }
