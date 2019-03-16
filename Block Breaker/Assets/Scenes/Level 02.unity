@@ -820,6 +820,11 @@ PrefabInstance:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 1194383154}
+    - target: {fileID: 4078182574507316854, guid: 85b441c1afead4e419b81ede0652458e,
+        type: 3}
+      propertyPath: ySpeed
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b441c1afead4e419b81ede0652458e, type: 3}
 --- !u!1001 &350119231
@@ -4055,24 +4060,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4893460962823471946, guid: c22fa6b25670a4ae289d6629642e45a1,
+        type: 3}
+      propertyPath: breakableBlocks
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22fa6b25670a4ae289d6629642e45a1, type: 3}
---- !u!1 &4893460962823471945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4893460962823471945, guid: c22fa6b25670a4ae289d6629642e45a1,
-    type: 3}
-  m_PrefabInstance: {fileID: 2644757660329400617}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4893460962823471946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4893460962823471945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c89f15e69b94946578077b0cebd2ebfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breakableBlocks: 0

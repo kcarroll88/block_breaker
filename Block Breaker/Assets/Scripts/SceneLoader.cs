@@ -18,7 +18,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadWinLevel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Win Level");
     }
 
     public void QuitGame()

@@ -22,9 +22,9 @@ public class Level : MonoBehaviour
     public void BlocksDestroyed()
     {
         breakableBlocks--;
-        if (breakableBlocks <= 0)
+        if (breakableBlocks == 0)
         {
-            loadScene.LoadWinLevel();
+            loadScene.LoadNextScene();
         }
     }
 }
