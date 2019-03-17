@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,8 @@ public class Block : MonoBehaviour
     // CONFIG PARAMETERS
     [SerializeField] AudioClip blockBreak;
     [SerializeField] GameObject blockSparklesVFX;
-    [SerializeField] int blockHealth = 3;
+    [SerializeField] int blockHealth;
+    [SerializeField] Sprite[] damageSprite;
 
     // CACHED REFERENCES
     Level level;
@@ -36,6 +38,16 @@ public class Block : MonoBehaviour
         {
             DestroyBlock();
         }
+        else
+        {
+            ShowNextHitSprite();
+        }
+    }
+
+    private void ShowNextHitSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        GetComponent<SpriteRenderer>().sprite = damageSprite[spriteIndex];
     }
 
     private void DestroyBlock()
