@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6264850734301232721}
   m_Layer: 0
   m_Name: Block
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,5 +119,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd11ffef3a689418a854d118b76c5cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockBreak: {fileID: 8300000, guid: 8afab68291bc04e82b3572107d89f89c, type: 3}
+  blockBreak: {fileID: 8300000, guid: c3e9407bd4fc84850bdd4da1e626405e, type: 3}
   blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}

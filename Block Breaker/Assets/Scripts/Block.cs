@@ -24,13 +24,20 @@ public class Block : MonoBehaviour
 
     private void DestroyBlock()
     {
-        BlockBreakSound();
-        Destroy(gameObject);
-        TriggerSparklesVFX();
+        if (tag == "Breakable")
+        {
+            BlockBreakSound();
+            Destroy(gameObject);
+            TriggerSparklesVFX();
 
-        // Counting Score
-        FindObjectOfType<GameStatus>().AddToScore();
-        level.BlocksDestroyed();
+            // Counting Score
+            FindObjectOfType<GameStatus>().AddToScore();
+            level.BlocksDestroyed();
+        }
+        else if (tag == "Unbreakable")
+        {
+            BlockBreakSound();
+        }
     }
 
     private void BlockBreakSound()
@@ -41,5 +48,6 @@ public class Block : MonoBehaviour
     private void TriggerSparklesVFX()
     {
         GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
+        Destroy(sparkles, 1f);
     }
 }
