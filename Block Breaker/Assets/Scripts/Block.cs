@@ -24,11 +24,13 @@ public class Block : MonoBehaviour
 
     private void DestroyBlock()
     {
-        FindObjectOfType<GameStatus>().AddToScore();
         BlockBreakSound();
         Destroy(gameObject);
-        level.BlocksDestroyed();
         TriggerSparklesVFX();
+
+        // Counting Score
+        FindObjectOfType<GameStatus>().AddToScore();
+        level.BlocksDestroyed();
     }
 
     private void BlockBreakSound()
