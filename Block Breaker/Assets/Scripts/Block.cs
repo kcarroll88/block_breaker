@@ -8,7 +8,6 @@ public class Block : MonoBehaviour
     // CONFIG PARAMETERS
     [SerializeField] AudioClip blockBreak;
     [SerializeField] GameObject blockSparklesVFX;
-    [SerializeField] int blockHealth;
     [SerializeField] Sprite[] damageSprite;
 
     // CACHED REFERENCES
@@ -34,6 +33,7 @@ public class Block : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         timesHit++;
+        int blockHealth = damageSprite.Length + 1;
         if (timesHit >= blockHealth)
         {
             DestroyBlock();
@@ -53,7 +53,7 @@ public class Block : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Block sprite is missing from array" + gameObject.name);
+            Debug.LogError("Block sprite is missing from array " + gameObject.name);
         }
     }
 
