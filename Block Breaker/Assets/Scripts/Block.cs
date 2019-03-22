@@ -47,7 +47,14 @@ public class Block : MonoBehaviour
     private void ShowNextHitSprite()
     {
         int spriteIndex = timesHit - 1;
-        GetComponent<SpriteRenderer>().sprite = damageSprite[spriteIndex];
+        if (damageSprite[spriteIndex] != null)
+        {
+            GetComponent<SpriteRenderer>().sprite = damageSprite[spriteIndex];
+        }
+        else
+        {
+            Debug.LogError("Block sprite is missing from array");
+        }
     }
 
     private void DestroyBlock()
