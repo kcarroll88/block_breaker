@@ -53,7 +53,7 @@ public class Block : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Block sprite is missing from array");
+            Debug.LogError("Block sprite is missing from array" + gameObject.name);
         }
     }
 
