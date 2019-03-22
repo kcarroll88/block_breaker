@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSpeed: 1
-  pointsPerBlock: 1
+  pointsPerBlock: 24
   scoreText: {fileID: 8839729274885029358}
+  isAutoPlayEnabled: 0
   currentScore: 0
 --- !u!1001 &8839729275614191977
 PrefabInstance:
@@ -163,14 +164,6 @@ PrefabInstance:
     - target: {fileID: 9120440150499593105, guid: 7167118e478d4403488e0bfbe0f944c1,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1002331271, guid: 7167118e478d4403488e0bfbe0f944c1, type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1002331271, guid: 7167118e478d4403488e0bfbe0f944c1, type: 3}
-      propertyPath: m_isInputParsingRequired
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
