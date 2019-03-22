@@ -138,6 +138,7 @@ MonoBehaviour:
   ballSounds:
   - {fileID: 8300000, guid: 3910bc79084794cf29b1b06cec654d9c, type: 3}
   - {fileID: 8300000, guid: 1d1d3f15300414744b28115ea80313f1, type: 3}
+  randomFactor: 0.2
 --- !u!82 &1763746829
 AudioSource:
   m_ObjectHideFlags: 0
